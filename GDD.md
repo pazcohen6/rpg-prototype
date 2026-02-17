@@ -101,6 +101,7 @@ A turn-based combat RPG focused on skill, items and stat scaling.
 12. Skill switching
 13. Inventory and Equipment
 14. Shop
+15. Balancing
 
 # Add Lateter
 - Tutorial
@@ -113,6 +114,7 @@ A turn-based combat RPG focused on skill, items and stat scaling.
 - Subclass (optional)
 - UI improvement
 - Stat randomization for items
+- More balancing
 
 # Things NOT in the start
 - Perfect animation
