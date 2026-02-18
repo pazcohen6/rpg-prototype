@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://b0ud4cmd3qnmm"]
+
+[ext_resource type="Shader" uid="uid://dhedb515rtnel" path="res://shaders/flash.tres" id="1_cl238"]
+[ext_resource type="Script" uid="uid://brtpukb85kyao" path="res://scene/vfx/flashing_sprite_2d.gd" id="3_gku7m"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_012j4"]
+resource_local_to_scene = true
+shader = ExtResource("1_cl238")
+shader_parameter/ColorParameter = Color(1, 1, 1, 1)
+shader_parameter/mixing_param = 0.0
+
+[node name="FlashingSprite2D" type="Sprite2D"]
+material = SubResource("ShaderMaterial_012j4")
+script = ExtResource("3_gku7m")

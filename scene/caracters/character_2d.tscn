@@ -1,0 +1,23 @@
+[gd_scene load_steps=6 format=3 uid="uid://b107wj5b1axj3"]
+
+[ext_resource type="Script" uid="uid://bnwdo1hpwwheu" path="res://scene/caracters/character_2d.gd" id="1_k0hbt"]
+[ext_resource type="PackedScene" uid="uid://b0ud4cmd3qnmm" path="res://scene/vfx/flashing_sprite_2d.tscn" id="2_k0hbt"]
+[ext_resource type="Shader" uid="uid://dhedb515rtnel" path="res://shaders/flash.tres" id="3_nwqe2"]
+[ext_resource type="Texture2D" uid="uid://bjatv56h0er0l" path="res://graphics/player/Boar_humanoid.png" id="4_nwqe2"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1d38r"]
+resource_local_to_scene = true
+shader = ExtResource("3_nwqe2")
+shader_parameter/ColorParameter = Color(1, 1, 1, 1)
+shader_parameter/mixing_param = 0.0
+
+[node name="Character2D" type="CharacterBody2D"]
+z_index = 1
+scale = Vector2(2, 2)
+script = ExtResource("1_k0hbt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="FlashingSprite2D" parent="." instance=ExtResource("2_k0hbt")]
+material = SubResource("ShaderMaterial_1d38r")
+texture = ExtResource("4_nwqe2")
