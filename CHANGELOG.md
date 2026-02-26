@@ -9,3 +9,8 @@
 - Added basic character class
 - Added 3 skills
 - Added basic game level withsmall combat test
+
+# Version 0.0.2 alpha - 26/02/2026
+- Added 4 Skill Delivery type
+- Added health bar
+- Added player

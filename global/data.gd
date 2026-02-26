@@ -10,34 +10,48 @@ const COLOR = {
 
 const SKILL_DATA = {
 	Enum.Skill.SWORD_SWING: {
-		'animation': preload('res://graphics/skill effect/physical/sword_swing.png'),
-		'h_frame': 14,
+		'animation': {0: preload('res://graphics/skill effect/physical/sword_swing.png')},
+		'h_frame': {0:14},
+		'rotation' : 0,
 		'color': COLOR[Enum.DamageType.PHYSICAL],
 		#icon
-		'damage': 34,
+		'damage': 10,
 		'damage_type' : Enum.DamageType.PHYSICAL,
 		'action_point': 1,
 		'delivery' : Enum.SkillDelivery.MELEE
 	},
 	Enum.Skill.SWORD_SWEEP: {
-		'animation': preload('res://graphics/skill effect/physical/sword_sweep.png'),
-		'h_frame': 15,
+		'animation': {0: preload('res://graphics/skill effect/physical/sword_sweep.png')},
+		'h_frame': {0: 15},
+		'rotation' : 0,
 		'color': COLOR[Enum.DamageType.PHYSICAL],
 		#icon
-		'damage' : 34,
+		'damage' : 10,
 		'damage_type' : Enum.DamageType.PHYSICAL,
 		'action_point': 1,
-		'delivery' : Enum.SkillDelivery.MELEE
+		'delivery' : Enum.SkillDelivery.STELTH_STRIKE
 	},
 	Enum.Skill.FLAME_RING: {
-		'animation': preload('res://graphics/skill effect/fire/flame_ring.png'),
-		'h_frame': 15,
+		'animation': {0: preload('res://graphics/skill effect/fire/flame_ring.png'), 1: preload('res://graphics/skill effect/fire/flame_ring_projectile.png')},
+		'h_frame': {0:15 , 1:10},
+		'rotation' : 10,
 		'color': COLOR[Enum.DamageType.FIRE],
 		#icon
-		'damage' : 34,
+		'damage' : 1,
 		'damage_type' : Enum.DamageType.FIRE,
 		'action_point': 1,
-		'delivery' : Enum.SkillDelivery.INSTANT
+		'delivery' : Enum.SkillDelivery.PROJECTILE
+	},
+	Enum.Skill.STEALTH: {
+		'animation': {0: preload('res://graphics/skill effect/stealth.png')},
+		'h_frame': {0:15},
+		'rotation' : 0,
+		'color': COLOR[Enum.DamageType.PHYSICAL],
+		#icon
+		'damage' : 0,
+		'damage_type' : Enum.DamageType.PHYSICAL,
+		'action_point': 1,
+		'delivery' : Enum.SkillDelivery.STELTH_STRIKE
 	}}
 
 const ITEM_DATA = {}

@@ -8,6 +8,7 @@ resource_local_to_scene = true
 shader = ExtResource("1_cl238")
 shader_parameter/ColorParameter = Color(1, 1, 1, 1)
 shader_parameter/mixing_param = 0.0
+shader_parameter/alphaParameter = 1.0
 
 [node name="FlashingSprite2D" type="Sprite2D"]
 material = SubResource("ShaderMaterial_012j4")

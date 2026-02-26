@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://cnabxnmackxio"]
+[gd_scene load_steps=5 format=3 uid="uid://cnabxnmackxio"]
 
 [ext_resource type="PackedScene" uid="uid://b107wj5b1axj3" path="res://scene/caracters/character_2d.tscn" id="1_8u3tu"]
 [ext_resource type="Script" uid="uid://bg02yvf35o6q5" path="res://scene/level/game.gd" id="1_y5s31"]
 [ext_resource type="Texture2D" uid="uid://digop8iks4js1" path="res://graphics/background/grave_Battleground.png" id="2_03olo"]
+[ext_resource type="PackedScene" uid="uid://s2fkkpb15gmo" path="res://scene/caracters/player.tscn" id="4_fdg55"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_y5s31")
@@ -17,11 +18,11 @@ texture = ExtResource("2_03olo")
 
 [node name="Object" type="Node2D" parent="."]
 
-[node name="player" parent="Object" instance=ExtResource("1_8u3tu")]
-position = Vector2(-390, 31)
-
 [node name="enemy" parent="Object" instance=ExtResource("1_8u3tu")]
-position = Vector2(454, 208)
+position = Vector2(382, 57)
+
+[node name="Player" parent="Object" instance=ExtResource("4_fdg55")]
+position = Vector2(-255, 39)
 
 [node name="SpawnMark" type="Node2D" parent="."]
 
